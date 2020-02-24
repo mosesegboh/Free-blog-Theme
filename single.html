@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta http-equiv = "X-UA-Compatible" content="ie=edge">
+<!-- Font awesome -->
+<script src="https://kit.fontawesome.com/1c29199772.js" crossorigin="anonymous"></script>
+
+<!-- Custom Styling -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
+<title>Single Post</title>
+</head>
+<body>
+	<!-- facebook page plugin sdk -->
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+	<header>
+		<div class="logo">
+			<h1 class = "logo-text"><span>Egboh</span>|Free Blog Theme</h1>	
+		</div>
+		<i class = "fa fa-bars menu-toggle" ></i>
+		<ul class = "nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<!-- <li><a href="#">Sign-Up</a></li>
+			<li><a href="#">Login</a></li> -->
+			<li>
+				<a href="#">
+					<i class="fa fa-user"></i>
+					Egboh Moses
+					<i class = "fa fa-chevron-down" style = "font-size: .8em;"></i>
+				</a>
+				<ul>
+					<li><a href="#">Dashboard</a></li>
+					<li><a href="#" class = "logout">Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+			<!-- page wrapper -->
+	<div class = "page-wrapper">
+		
+
+		<!-- Content -->
+		<div  class = "content clearfix">
+			<!-- Main Content wrapper -->
+			<div class="main-content-wrapper">
+				<div class="main-content single">
+				<h1 class="post-title">This is the title of the post</h1>	
+					<div class="post-content">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a
+						type specimen book. It has survived not only five centuries, but also the
+						leap into electronic typesetting, remaining essentially unchanged</p>
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a
+						type specimen book. It has survived not only five centuries, but also the
+						leap into electronic typesetting, remaining essentially unchanged</p>
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a
+						type specimen book. It has survived not only five centuries, but also the
+						leap into electronic typesetting, remaining essentially unchanged</p>
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a
+						type specimen book. It has survived not only five centuries, but also the
+						leap into electronic typesetting, remaining essentially unchanged</p>
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a
+						type specimen book. It has survived not only five centuries, but also the
+						leap into electronic typesetting, remaining essentially unchanged</p>
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a
+						type specimen book. It has survived not only five centuries, but also the
+						leap into electronic typesetting, remaining essentially unchanged</p>
+
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a
+						type specimen book. It has survived not only five centuries, but also the
+						leap into electronic typesetting, remaining essentially unchanged</p>
+					</div>		
+				</div>
+			</div>
+			<!-- Main Content end -->
+
+			<!-- sidebar -->
+				<div class="sidebar single">
+
+					<div class="fb-page" data-href="https://www.facebook.com/mozettyservices/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/mozettyservices/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/mozettyservices/">mozettyservices.com</a></blockquote></div>
+
+					<div class="section popular">
+						<h2 class="section-title">Popular</h2>
+						<div class="post clearfix">
+							<img src="images/img-1.jpg" alt="">
+							<a href="" class="title"><h4>How to Overcome your fears</h4></a>
+						</div>
+
+						<div class="post clearfix">
+							<img src="images/img-1.jpg" alt="">
+							<a href="" class="title"><h4>How to Overcome your fears</h4></a>
+						</div>
+
+						<div class="post clearfix">
+							<img src="images/img-1.jpg" alt="">
+							<a href="" class="title"><h4>How to Overcome your fears</h4></a>
+						</div>
+
+						<div class="post clearfix">
+							<img src="images/img-1.jpg" alt="">
+							<a href="" class="title"><h4>How to Overcome your fears</h4></a>
+						</div>
+
+						<div class="post clearfix">
+							<img src="images/img-1.jpg" alt="">
+							<a href="" class="title"><h4>How to Overcome your fears</h4></a>
+						</div>
+					</div>
+					<div class="section topics">
+						<h2 class="section-title">Topics</h2>
+						<ul>
+
+							<?php foreach ($topics as $key => $topic): ?>
+							<tr>
+							<td> <?php echo $key + 1; ?> </td> <!--  this is the serial number ....+1 to start counting from 1 -->
+							<td> <?php echo $topic['name']; ?> </td> <!-- this is the topic name which is the value of the array key name -->
+							<td><a href=" edit.php?id=<?php echo $topic['id']; ?>" class = "edit">Edit</a></td> <!-- the code in the href is to genrate a get request to select the particular topic with the id displayed above (you can see this in the url) for editing -->
+							<td><a href="index.php?del_id=<?php echo $topic['id']; ?> " class = "delete">Delete</a></td> <!-- we are generating a get is request to be used to delete the value with the id above -->
+							</tr>
+							<?php endforeach ?>
+
+							<li><a href="#">Poems</a></li>
+
+
+							<!-- <li><a href="#">Quotes</a></li>
+							<li><a href="#">Fiction</a></li>
+							<li><a href="#">Biography</a></li>
+							<li><a href="#">Inspiration</a></li>
+							<li><a href="#">Motivation</a></li>
+							<li><a href="#">Life Lessons</a></li> -->
+						</ul>
+
+					</div>
+				</div>	
+			<!-- sidebar end -->
+		</div>
+
+
+
+		<!-- Content-end -->
+	</div>
+	<!-- Page Wrapper -->
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer-content">
+			<div class="footer-section about">
+				<h1 class="logo-text"><span>Egboh</span>Theme</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard .</p>			
+				<div class="contact">
+					<span><i class = "fas fa-phone"></i>&nbsp; 123-456-7890</span>
+					<span><i class = "fas fa-envelope"></i>&nbsp; info@egboh.com</span>
+				</div>
+				<div class="socials">
+					<a href=""><i class="fab fa-facebook"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+			<div class="footer-section links">
+				<h1>Quick Links</h1>
+				<br>
+				<ul>
+					<a href=""><li>Events</li></a>
+					<a href=""><li>Team</li></a>
+					<a href=""><li>Mentors</li></a>
+					<a href=""><li>Gallery</li></a>
+					<a href=""><li>Terms and Conditions</li></a>
+				</ul>
+			</div>
+			<div class="footer-section contact-form">
+				<h2>Contact Us</h2>
+				<br>
+				<form action="index.html" method="post">
+					<input type="email" name="email"  class="text-input contact-input" placeholder="Your email Address...."></input>
+					<textarea rows= "4" name="message" class="text-input contact-input" placeholder = "Your Message...."></textarea>
+					<button type="submit" class="btn btn-big contact-btn">
+						<i class="fas fa-envelope"></i>
+					Send
+					</button>
+				</form>
+			</div>
+		</div>	
+		<div class="footer-bottom">
+			&copy; mozetty.com | Designed by Egboh Moses
+		</div>
+	</div>
+
+	<!-- footer-end-->
+	<!-- JQuery -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Slick Carousel script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+	<!-- Custom Script -->
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+
+</html>
+
+
